@@ -8,6 +8,12 @@ public class StatusApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StatusApplication.class, args);
+		
+		if(System.currentTimeMillis() == 1l) {
+			System.out.println("teste errado");
+		}else {
+			System.out.println("teste correto");
+		}
 	}
 
 }
